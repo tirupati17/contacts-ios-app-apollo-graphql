@@ -1,0 +1,1114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5411F2B226465AB00FFE4EE /* GKAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F2A226465AB00FFE4EE /* GKAppDelegate.swift */; };
+		D5411F2D226465AB00FFE4EE /* GKSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F2C226465AB00FFE4EE /* GKSplashViewController.swift */; };
+		D5411F30226465AB00FFE4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5411F2E226465AB00FFE4EE /* Main.storyboard */; };
+		D5411F32226465B000FFE4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5411F31226465B000FFE4EE /* Assets.xcassets */; };
+		D5411F35226465B000FFE4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5411F33226465B000FFE4EE /* LaunchScreen.storyboard */; };
+		D5411F4322647C8B00FFE4EE /* GKConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F4222647C8B00FFE4EE /* GKConstant.swift */; };
+		D5411F4C22647F0A00FFE4EE /* GKRequest+Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F4B22647F0A00FFE4EE /* GKRequest+Contacts.swift */; };
+		D5411F4E22647F3800FFE4EE /* GKAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F4D22647F3800FFE4EE /* GKAPIRequest.swift */; };
+		D5411F5022647F5500FFE4EE /* GKAPIRequest+Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F4F22647F5500FFE4EE /* GKAPIRequest+Contacts.swift */; };
+		D5411F5222647F9B00FFE4EE /* GKAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F5122647F9B00FFE4EE /* GKAPIConstant.swift */; };
+		D5411F5422647FB400FFE4EE /* GKAPIRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F5322647FB400FFE4EE /* GKAPIRequestType.swift */; };
+		D5411F5622647FCC00FFE4EE /* GKAPIStringUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F5522647FCB00FFE4EE /* GKAPIStringUrl.swift */; };
+		D5411F582264802A00FFE4EE /* GKContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F572264802A00FFE4EE /* GKContact.swift */; };
+		D5411F5C2264814B00FFE4EE /* UIViewController+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F5B2264814B00FFE4EE /* UIViewController+Protocol.swift */; };
+		D5411F5E2264819600FFE4EE /* Storyboard+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F5D2264819600FFE4EE /* Storyboard+Protocol.swift */; };
+		D5411F602264822D00FFE4EE /* GKBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F5F2264822D00FFE4EE /* GKBasicViewController.swift */; };
+		D5411F622264824200FFE4EE /* GKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F612264824200FFE4EE /* GKViewController.swift */; };
+		D5411F652264851300FFE4EE /* GKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F642264851300FFE4EE /* GKError.swift */; };
+		D5411F672264852100FFE4EE /* GKLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F662264852100FFE4EE /* GKLogger.swift */; };
+		D5411F712264922400FFE4EE /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F702264922400FFE4EE /* ContactsTests.swift */; };
+		D5411F7F2264923D00FFE4EE /* ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F7E2264923D00FFE4EE /* ContactsUITests.swift */; };
+		D5411F892265AADD00FFE4EE /* GKURLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F872265AADC00FFE4EE /* GKURLSessionManager.swift */; };
+		D5411F8B2265B59200FFE4EE /* GKURLConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5411F8A2265B59200FFE4EE /* GKURLConnectionManager.swift */; };
+		D589CA442451CE090080D953 /* GraphQLNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589CA222451CE090080D953 /* GraphQLNetworkConfiguration.swift */; };
+		D589CA452451CE090080D953 /* GraphQLNetworkProvider+QueryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589CA242451CE090080D953 /* GraphQLNetworkProvider+QueryHandler.swift */; };
+		D589CA462451CE090080D953 /* GraphQLNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589CA252451CE090080D953 /* GraphQLNetworkProvider.swift */; };
+		D589CA472451CE090080D953 /* GraphQLNetworkProvider+JSONParseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589CA262451CE090080D953 /* GraphQLNetworkProvider+JSONParseHandler.swift */; };
+		D589CA5C2451CE090080D953 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = D589CA3C2451CE090080D953 /* schema.json */; };
+		D589CA5D2451CE090080D953 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589CA3D2451CE090080D953 /* API.swift */; };
+		D589CA652451CF6F0080D953 /* ResponseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D589CA642451CF6F0080D953 /* ResponseErrorModel.swift */; };
+		D589CA672451D50E0080D953 /* contacts.graphql in Resources */ = {isa = PBXBuildFile; fileRef = D589CA662451D50E0080D953 /* contacts.graphql */; };
+		D58F44482269DB1500837662 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F44472269DB1400837662 /* String+Extension.swift */; };
+		D58F444A226A05B800837662 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F4449226A05B800837662 /* UIApplication+Extension.swift */; };
+		D58F4467226A40A700837662 /* GKAppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F445D226A40A700837662 /* GKAppDelegateTests.swift */; };
+		D58F4468226A40A700837662 /* GKContactDetailCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F445F226A40A700837662 /* GKContactDetailCellTests.swift */; };
+		D58F4469226A40A700837662 /* GKContactListCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F4460226A40A700837662 /* GKContactListCellTests.swift */; };
+		D58F446A226A40A700837662 /* GKContactListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F4462226A40A700837662 /* GKContactListPresenterTests.swift */; };
+		D58F446B226A40A700837662 /* GKContactListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F4463226A40A700837662 /* GKContactListViewTests.swift */; };
+		D58F446C226A40A700837662 /* GKContactDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F4464226A40A700837662 /* GKContactDetailViewTests.swift */; };
+		D58F446D226A40A700837662 /* GKContactDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F4465226A40A700837662 /* GKContactDetailPresenterTests.swift */; };
+		D58F446F226B003E00837662 /* GKTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58F446E226B003E00837662 /* GKTableViewController.swift */; };
+		D5CC181622685C7E00D4C91B /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC181522685C7E00D4C91B /* Int+Extension.swift */; };
+		D5CC18182268616C00D4C91B /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC18172268616C00D4C91B /* Codable+Extension.swift */; };
+		D5E8E4682267C2F400CBE016 /* GKContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8E4672267C2F400CBE016 /* GKContactDetailView.swift */; };
+		D5E8E46A2267C30400CBE016 /* GKContactDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8E4692267C30400CBE016 /* GKContactDetailPresenter.swift */; };
+		D5E8E46C2267C31300CBE016 /* GKContactDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8E46B2267C31300CBE016 /* GKContactDetailProtocol.swift */; };
+		D5E8E46E2267C32300CBE016 /* GKContactDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8E46D2267C32300CBE016 /* GKContactDetailCell.swift */; };
+		D5F9B69C2266FFE500BB3052 /* GKContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B69B2266FFE500BB3052 /* GKContactListPresenter.swift */; };
+		D5F9B69E2266FFF700BB3052 /* GKContactListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B69D2266FFF700BB3052 /* GKContactListProtocol.swift */; };
+		D5F9B6A22267002800BB3052 /* GKContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6A12267002800BB3052 /* GKContactListCell.swift */; };
+		D5F9B6A42267009300BB3052 /* GKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6A32267009300BB3052 /* GKTableViewCell.swift */; };
+		D5F9B6A62267035C00BB3052 /* GKContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6A52267035C00BB3052 /* GKContactListView.swift */; };
+		D5F9B6AE2267631F00BB3052 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6AD2267631F00BB3052 /* UIView+Extension.swift */; };
+		D5F9B6B02267634900BB3052 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6AF2267634900BB3052 /* UIImageView+Extension.swift */; };
+		D5F9B6B222676A2200BB3052 /* UICollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6B122676A2200BB3052 /* UICollection+Extension.swift */; };
+		D5F9B6B422676D2100BB3052 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6B322676D2100BB3052 /* UIStoryboard+Extension.swift */; };
+		D5F9B6B622677C0C00BB3052 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F9B6B522677C0C00BB3052 /* UIColor+Extension.swift */; };
+		DDB55714BED1CCE8FC8950BC /* Pods_Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D281586D23157F97B5CA04 /* Pods_Contacts.framework */; };
+		FFCD7EB8B2506BB5D7FE931F /* libPods-ContactsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 098CC9CEDD421FBC97BB0DC6 /* libPods-ContactsTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5411F732264922400FFE4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5411F1F226465AB00FFE4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5411F26226465AB00FFE4EE;
+			remoteInfo = Contacts;
+		};
+		D5411F812264923D00FFE4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5411F1F226465AB00FFE4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5411F26226465AB00FFE4EE;
+			remoteInfo = Contacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		098CC9CEDD421FBC97BB0DC6 /* libPods-ContactsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContactsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA5D17F00D93455E1E9BB85 /* Pods-Contacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contacts.release.xcconfig"; path = "Target Support Files/Pods-Contacts/Pods-Contacts.release.xcconfig"; sourceTree = "<group>"; };
+		75FE9C549EE3997B7D312001 /* Pods-ContactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsTests.debug.xcconfig"; path = "Target Support Files/Pods-ContactsTests/Pods-ContactsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		840927C6EBB00507103E1E5B /* Pods-Contacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contacts.debug.xcconfig"; path = "Target Support Files/Pods-Contacts/Pods-Contacts.debug.xcconfig"; sourceTree = "<group>"; };
+		B61867390DF0DE43FA3F90D8 /* Pods-ContactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsTests.release.xcconfig"; path = "Target Support Files/Pods-ContactsTests/Pods-ContactsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9D281586D23157F97B5CA04 /* Pods_Contacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5411F27226465AB00FFE4EE /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5411F2A226465AB00FFE4EE /* GKAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAppDelegate.swift; sourceTree = "<group>"; };
+		D5411F2C226465AB00FFE4EE /* GKSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKSplashViewController.swift; sourceTree = "<group>"; };
+		D5411F2F226465AB00FFE4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5411F31226465B000FFE4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5411F34226465B000FFE4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5411F36226465B000FFE4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5411F4222647C8B00FFE4EE /* GKConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKConstant.swift; sourceTree = "<group>"; };
+		D5411F4B22647F0A00FFE4EE /* GKRequest+Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GKRequest+Contacts.swift"; sourceTree = "<group>"; };
+		D5411F4D22647F3800FFE4EE /* GKAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAPIRequest.swift; sourceTree = "<group>"; };
+		D5411F4F22647F5500FFE4EE /* GKAPIRequest+Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GKAPIRequest+Contacts.swift"; sourceTree = "<group>"; };
+		D5411F5122647F9B00FFE4EE /* GKAPIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAPIConstant.swift; sourceTree = "<group>"; };
+		D5411F5322647FB400FFE4EE /* GKAPIRequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAPIRequestType.swift; sourceTree = "<group>"; };
+		D5411F5522647FCB00FFE4EE /* GKAPIStringUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKAPIStringUrl.swift; sourceTree = "<group>"; };
+		D5411F572264802A00FFE4EE /* GKContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContact.swift; sourceTree = "<group>"; };
+		D5411F5B2264814B00FFE4EE /* UIViewController+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Protocol.swift"; sourceTree = "<group>"; };
+		D5411F5D2264819600FFE4EE /* Storyboard+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Protocol.swift"; sourceTree = "<group>"; };
+		D5411F5F2264822D00FFE4EE /* GKBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKBasicViewController.swift; sourceTree = "<group>"; };
+		D5411F612264824200FFE4EE /* GKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKViewController.swift; sourceTree = "<group>"; };
+		D5411F642264851300FFE4EE /* GKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKError.swift; sourceTree = "<group>"; };
+		D5411F662264852100FFE4EE /* GKLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKLogger.swift; sourceTree = "<group>"; };
+		D5411F6E2264922300FFE4EE /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5411F702264922400FFE4EE /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
+		D5411F722264922400FFE4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5411F7C2264923D00FFE4EE /* ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5411F7E2264923D00FFE4EE /* ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUITests.swift; sourceTree = "<group>"; };
+		D5411F802264923D00FFE4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5411F872265AADC00FFE4EE /* GKURLSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKURLSessionManager.swift; sourceTree = "<group>"; };
+		D5411F8A2265B59200FFE4EE /* GKURLConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKURLConnectionManager.swift; sourceTree = "<group>"; };
+		D589CA222451CE090080D953 /* GraphQLNetworkConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLNetworkConfiguration.swift; sourceTree = "<group>"; };
+		D589CA242451CE090080D953 /* GraphQLNetworkProvider+QueryHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GraphQLNetworkProvider+QueryHandler.swift"; sourceTree = "<group>"; };
+		D589CA252451CE090080D953 /* GraphQLNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphQLNetworkProvider.swift; sourceTree = "<group>"; };
+		D589CA262451CE090080D953 /* GraphQLNetworkProvider+JSONParseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GraphQLNetworkProvider+JSONParseHandler.swift"; sourceTree = "<group>"; };
+		D589CA3C2451CE090080D953 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		D589CA3D2451CE090080D953 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D589CA642451CF6F0080D953 /* ResponseErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseErrorModel.swift; sourceTree = "<group>"; };
+		D589CA662451D50E0080D953 /* contacts.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contacts.graphql; sourceTree = "<group>"; };
+		D58F44472269DB1400837662 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D58F4449226A05B800837662 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		D58F445D226A40A700837662 /* GKAppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKAppDelegateTests.swift; sourceTree = "<group>"; };
+		D58F445F226A40A700837662 /* GKContactDetailCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKContactDetailCellTests.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D58F4460226A40A700837662 /* GKContactListCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKContactListCellTests.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D58F4462226A40A700837662 /* GKContactListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKContactListPresenterTests.swift; sourceTree = "<group>"; };
+		D58F4463226A40A700837662 /* GKContactListViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKContactListViewTests.swift; sourceTree = "<group>"; };
+		D58F4464226A40A700837662 /* GKContactDetailViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKContactDetailViewTests.swift; sourceTree = "<group>"; };
+		D58F4465226A40A700837662 /* GKContactDetailPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GKContactDetailPresenterTests.swift; sourceTree = "<group>"; };
+		D58F446E226B003E00837662 /* GKTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKTableViewController.swift; sourceTree = "<group>"; };
+		D5CC181522685C7E00D4C91B /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		D5CC18172268616C00D4C91B /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		D5E8E4672267C2F400CBE016 /* GKContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactDetailView.swift; sourceTree = "<group>"; };
+		D5E8E4692267C30400CBE016 /* GKContactDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactDetailPresenter.swift; sourceTree = "<group>"; };
+		D5E8E46B2267C31300CBE016 /* GKContactDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactDetailProtocol.swift; sourceTree = "<group>"; };
+		D5E8E46D2267C32300CBE016 /* GKContactDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactDetailCell.swift; sourceTree = "<group>"; };
+		D5F9B69B2266FFE500BB3052 /* GKContactListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactListPresenter.swift; sourceTree = "<group>"; };
+		D5F9B69D2266FFF700BB3052 /* GKContactListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactListProtocol.swift; sourceTree = "<group>"; };
+		D5F9B6A12267002800BB3052 /* GKContactListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactListCell.swift; sourceTree = "<group>"; };
+		D5F9B6A32267009300BB3052 /* GKTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKTableViewCell.swift; sourceTree = "<group>"; };
+		D5F9B6A52267035C00BB3052 /* GKContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKContactListView.swift; sourceTree = "<group>"; };
+		D5F9B6AD2267631F00BB3052 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D5F9B6AF2267634900BB3052 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		D5F9B6B122676A2200BB3052 /* UICollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+Extension.swift"; sourceTree = "<group>"; };
+		D5F9B6B322676D2100BB3052 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		D5F9B6B522677C0C00BB3052 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5411F24226465AB00FFE4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB55714BED1CCE8FC8950BC /* Pods_Contacts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5411F6B2264922300FFE4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFCD7EB8B2506BB5D7FE931F /* libPods-ContactsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5411F792264923D00FFE4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		615F0807F826DD404F4E8302 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				840927C6EBB00507103E1E5B /* Pods-Contacts.debug.xcconfig */,
+				6FA5D17F00D93455E1E9BB85 /* Pods-Contacts.release.xcconfig */,
+				75FE9C549EE3997B7D312001 /* Pods-ContactsTests.debug.xcconfig */,
+				B61867390DF0DE43FA3F90D8 /* Pods-ContactsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		679438F2118396A0AC9B8A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D281586D23157F97B5CA04 /* Pods_Contacts.framework */,
+				098CC9CEDD421FBC97BB0DC6 /* libPods-ContactsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5411F1E226465AB00FFE4EE = {
+			isa = PBXGroup;
+			children = (
+				D5411F29226465AB00FFE4EE /* Contacts */,
+				D5411F6F2264922400FFE4EE /* ContactsTests */,
+				D5411F7D2264923D00FFE4EE /* ContactsUITests */,
+				D5411F28226465AB00FFE4EE /* Products */,
+				615F0807F826DD404F4E8302 /* Pods */,
+				679438F2118396A0AC9B8A2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5411F28226465AB00FFE4EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F27226465AB00FFE4EE /* Contacts.app */,
+				D5411F6E2264922300FFE4EE /* ContactsTests.xctest */,
+				D5411F7C2264923D00FFE4EE /* ContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5411F29226465AB00FFE4EE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				D589CA1F2451CE090080D953 /* GraphQL */,
+				D5411F3C22647B9A00FFE4EE /* Classes */,
+				D5411F2E226465AB00FFE4EE /* Main.storyboard */,
+				D5411F31226465B000FFE4EE /* Assets.xcassets */,
+				D5411F33226465B000FFE4EE /* LaunchScreen.storyboard */,
+				D5411F36226465B000FFE4EE /* Info.plist */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		D5411F3C22647B9A00FFE4EE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F2A226465AB00FFE4EE /* GKAppDelegate.swift */,
+				D5411F2C226465AB00FFE4EE /* GKSplashViewController.swift */,
+				D5411F3F22647BD800FFE4EE /* GKModules */,
+				D5411F3E22647BC600FFE4EE /* GKLibrary */,
+				D5411F3D22647BB300FFE4EE /* GKCommon */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D5411F3D22647BB300FFE4EE /* GKCommon */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F4122647BFE00FFE4EE /* Extension */,
+				D5411F4022647BF600FFE4EE /* Protocols */,
+			);
+			path = GKCommon;
+			sourceTree = "<group>";
+		};
+		D5411F3E22647BC600FFE4EE /* GKLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F63226484F200FFE4EE /* GKClass */,
+				D5411F4622647D5500FFE4EE /* GKModel */,
+				D5411F4522647CE400FFE4EE /* GKConnection */,
+				D5411F4422647CDC00FFE4EE /* GKView */,
+				D5411F4222647C8B00FFE4EE /* GKConstant.swift */,
+			);
+			path = GKLibrary;
+			sourceTree = "<group>";
+		};
+		D5411F3F22647BD800FFE4EE /* GKModules */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F682264906C00FFE4EE /* List */,
+				D5411F692264907B00FFE4EE /* Detail */,
+			);
+			path = GKModules;
+			sourceTree = "<group>";
+		};
+		D5411F4022647BF600FFE4EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F5B2264814B00FFE4EE /* UIViewController+Protocol.swift */,
+				D5411F5D2264819600FFE4EE /* Storyboard+Protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D5411F4122647BFE00FFE4EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D5F9B6AD2267631F00BB3052 /* UIView+Extension.swift */,
+				D5F9B6AF2267634900BB3052 /* UIImageView+Extension.swift */,
+				D5F9B6B122676A2200BB3052 /* UICollection+Extension.swift */,
+				D5F9B6B322676D2100BB3052 /* UIStoryboard+Extension.swift */,
+				D5F9B6B522677C0C00BB3052 /* UIColor+Extension.swift */,
+				D5CC181522685C7E00D4C91B /* Int+Extension.swift */,
+				D5CC18172268616C00D4C91B /* Codable+Extension.swift */,
+				D58F44472269DB1400837662 /* String+Extension.swift */,
+				D58F4449226A05B800837662 /* UIApplication+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D5411F4422647CDC00FFE4EE /* GKView */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F5F2264822D00FFE4EE /* GKBasicViewController.swift */,
+				D5411F612264824200FFE4EE /* GKViewController.swift */,
+				D58F446E226B003E00837662 /* GKTableViewController.swift */,
+				D5F9B6A32267009300BB3052 /* GKTableViewCell.swift */,
+			);
+			path = GKView;
+			sourceTree = "<group>";
+		};
+		D5411F4522647CE400FFE4EE /* GKConnection */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F4922647E1500FFE4EE /* GKAPI */,
+				D5411F4722647D7200FFE4EE /* GKRequest */,
+			);
+			path = GKConnection;
+			sourceTree = "<group>";
+		};
+		D5411F4622647D5500FFE4EE /* GKModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F572264802A00FFE4EE /* GKContact.swift */,
+				D589CA642451CF6F0080D953 /* ResponseErrorModel.swift */,
+			);
+			path = GKModel;
+			sourceTree = "<group>";
+		};
+		D5411F4722647D7200FFE4EE /* GKRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F4B22647F0A00FFE4EE /* GKRequest+Contacts.swift */,
+			);
+			path = GKRequest;
+			sourceTree = "<group>";
+		};
+		D5411F4822647DE300FFE4EE /* GKAPIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F4F22647F5500FFE4EE /* GKAPIRequest+Contacts.swift */,
+			);
+			path = GKAPIRequest;
+			sourceTree = "<group>";
+		};
+		D5411F4922647E1500FFE4EE /* GKAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F4A22647E1E00FFE4EE /* GKAPICommon */,
+				D5411F4822647DE300FFE4EE /* GKAPIRequest */,
+				D5411F4D22647F3800FFE4EE /* GKAPIRequest.swift */,
+				D5411F8A2265B59200FFE4EE /* GKURLConnectionManager.swift */,
+				D5411F872265AADC00FFE4EE /* GKURLSessionManager.swift */,
+			);
+			path = GKAPI;
+			sourceTree = "<group>";
+		};
+		D5411F4A22647E1E00FFE4EE /* GKAPICommon */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F5122647F9B00FFE4EE /* GKAPIConstant.swift */,
+				D5411F5322647FB400FFE4EE /* GKAPIRequestType.swift */,
+				D5411F5522647FCB00FFE4EE /* GKAPIStringUrl.swift */,
+			);
+			path = GKAPICommon;
+			sourceTree = "<group>";
+		};
+		D5411F63226484F200FFE4EE /* GKClass */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F642264851300FFE4EE /* GKError.swift */,
+				D5411F662264852100FFE4EE /* GKLogger.swift */,
+			);
+			path = GKClass;
+			sourceTree = "<group>";
+		};
+		D5411F682264906C00FFE4EE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D5F9B6A52267035C00BB3052 /* GKContactListView.swift */,
+				D5F9B69B2266FFE500BB3052 /* GKContactListPresenter.swift */,
+				D5F9B69D2266FFF700BB3052 /* GKContactListProtocol.swift */,
+				D5F9B6A12267002800BB3052 /* GKContactListCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D5411F692264907B00FFE4EE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8E4672267C2F400CBE016 /* GKContactDetailView.swift */,
+				D5E8E4692267C30400CBE016 /* GKContactDetailPresenter.swift */,
+				D5E8E46B2267C31300CBE016 /* GKContactDetailProtocol.swift */,
+				D5E8E46D2267C32300CBE016 /* GKContactDetailCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D5411F6F2264922400FFE4EE /* ContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D58F445E226A40A700837662 /* CellTests */,
+				D58F445C226A40A700837662 /* ClassesTests */,
+				D58F4466226A40A700837662 /* NetworkRequestTests */,
+				D58F4461226A40A700837662 /* ViewPresenterTests */,
+				D5411F702264922400FFE4EE /* ContactsTests.swift */,
+				D5411F722264922400FFE4EE /* Info.plist */,
+			);
+			path = ContactsTests;
+			sourceTree = "<group>";
+		};
+		D5411F7D2264923D00FFE4EE /* ContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5411F7E2264923D00FFE4EE /* ContactsUITests.swift */,
+				D5411F802264923D00FFE4EE /* Info.plist */,
+			);
+			path = ContactsUITests;
+			sourceTree = "<group>";
+		};
+		D589CA1F2451CE090080D953 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				D589CA202451CE090080D953 /* Network */,
+				D589CA272451CE090080D953 /* Resource */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		D589CA202451CE090080D953 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D589CA212451CE090080D953 /* Configuration */,
+				D589CA232451CE090080D953 /* Providers */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D589CA212451CE090080D953 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D589CA222451CE090080D953 /* GraphQLNetworkConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D589CA232451CE090080D953 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				D589CA242451CE090080D953 /* GraphQLNetworkProvider+QueryHandler.swift */,
+				D589CA252451CE090080D953 /* GraphQLNetworkProvider.swift */,
+				D589CA262451CE090080D953 /* GraphQLNetworkProvider+JSONParseHandler.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		D589CA272451CE090080D953 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D589CA662451D50E0080D953 /* contacts.graphql */,
+				D589CA3C2451CE090080D953 /* schema.json */,
+				D589CA3D2451CE090080D953 /* API.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D58F445C226A40A700837662 /* ClassesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D58F445D226A40A700837662 /* GKAppDelegateTests.swift */,
+			);
+			path = ClassesTests;
+			sourceTree = "<group>";
+		};
+		D58F445E226A40A700837662 /* CellTests */ = {
+			isa = PBXGroup;
+			children = (
+				D58F445F226A40A700837662 /* GKContactDetailCellTests.swift */,
+				D58F4460226A40A700837662 /* GKContactListCellTests.swift */,
+			);
+			path = CellTests;
+			sourceTree = "<group>";
+		};
+		D58F4461226A40A700837662 /* ViewPresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D58F4463226A40A700837662 /* GKContactListViewTests.swift */,
+				D58F4462226A40A700837662 /* GKContactListPresenterTests.swift */,
+				D58F4464226A40A700837662 /* GKContactDetailViewTests.swift */,
+				D58F4465226A40A700837662 /* GKContactDetailPresenterTests.swift */,
+			);
+			path = ViewPresenterTests;
+			sourceTree = "<group>";
+		};
+		D58F4466226A40A700837662 /* NetworkRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkRequestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5411F26226465AB00FFE4EE /* Contacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5411F39226465B000FFE4EE /* Build configuration list for PBXNativeTarget "Contacts" */;
+			buildPhases = (
+				889AD6704E98BE3CB683139B /* [CP] Check Pods Manifest.lock */,
+				D5411F23226465AB00FFE4EE /* Sources */,
+				D5411F24226465AB00FFE4EE /* Frameworks */,
+				D5411F25226465AB00FFE4EE /* Resources */,
+				FA898FE936C316E2F6D00B6C /* [CP] Embed Pods Frameworks */,
+				D589CA682451D60E0080D953 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Contacts;
+			productName = Contacts;
+			productReference = D5411F27226465AB00FFE4EE /* Contacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5411F6D2264922300FFE4EE /* ContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5411F752264922400FFE4EE /* Build configuration list for PBXNativeTarget "ContactsTests" */;
+			buildPhases = (
+				F7CA20370EE8D0EDDE94D4BC /* [CP] Check Pods Manifest.lock */,
+				D5411F6A2264922300FFE4EE /* Sources */,
+				D5411F6B2264922300FFE4EE /* Frameworks */,
+				D5411F6C2264922300FFE4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5411F742264922400FFE4EE /* PBXTargetDependency */,
+			);
+			name = ContactsTests;
+			productName = ContactsTests;
+			productReference = D5411F6E2264922300FFE4EE /* ContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5411F7B2264923D00FFE4EE /* ContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5411F832264923D00FFE4EE /* Build configuration list for PBXNativeTarget "ContactsUITests" */;
+			buildPhases = (
+				D5411F782264923D00FFE4EE /* Sources */,
+				D5411F792264923D00FFE4EE /* Frameworks */,
+				D5411F7A2264923D00FFE4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5411F822264923D00FFE4EE /* PBXTargetDependency */,
+			);
+			name = ContactsUITests;
+			productName = ContactsUITests;
+			productReference = D5411F7C2264923D00FFE4EE /* ContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5411F1F226465AB00FFE4EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tirupati Balan";
+				TargetAttributes = {
+					D5411F26226465AB00FFE4EE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+					D5411F6D2264922300FFE4EE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = D5411F26226465AB00FFE4EE;
+					};
+					D5411F7B2264923D00FFE4EE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = D5411F26226465AB00FFE4EE;
+					};
+				};
+			};
+			buildConfigurationList = D5411F22226465AB00FFE4EE /* Build configuration list for PBXProject "Contacts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5411F1E226465AB00FFE4EE;
+			productRefGroup = D5411F28226465AB00FFE4EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5411F26226465AB00FFE4EE /* Contacts */,
+				D5411F6D2264922300FFE4EE /* ContactsTests */,
+				D5411F7B2264923D00FFE4EE /* ContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5411F25226465AB00FFE4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D589CA672451D50E0080D953 /* contacts.graphql in Resources */,
+				D589CA5C2451CE090080D953 /* schema.json in Resources */,
+				D5411F35226465B000FFE4EE /* LaunchScreen.storyboard in Resources */,
+				D5411F32226465B000FFE4EE /* Assets.xcassets in Resources */,
+				D5411F30226465AB00FFE4EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5411F6C2264922300FFE4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5411F7A2264923D00FFE4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		889AD6704E98BE3CB683139B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Contacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D589CA682451D60E0080D953 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"GraphQL/Resource/schema.json\" \"${SRCROOT}/Zenius/GraphQL/Resource/API.swift\"",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"GraphQL/Resource/schema.json\" \"${SRCROOT}/Contacts/GraphQL/Resource/API.swift\"\n";
+		};
+		F7CA20370EE8D0EDDE94D4BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA898FE936C316E2F6D00B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Contacts/Pods-Contacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Contacts/Pods-Contacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Contacts/Pods-Contacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5411F23226465AB00FFE4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E8E4682267C2F400CBE016 /* GKContactDetailView.swift in Sources */,
+				D5411F5622647FCC00FFE4EE /* GKAPIStringUrl.swift in Sources */,
+				D5411F5422647FB400FFE4EE /* GKAPIRequestType.swift in Sources */,
+				D5411F5C2264814B00FFE4EE /* UIViewController+Protocol.swift in Sources */,
+				D5F9B6B222676A2200BB3052 /* UICollection+Extension.swift in Sources */,
+				D589CA472451CE090080D953 /* GraphQLNetworkProvider+JSONParseHandler.swift in Sources */,
+				D5E8E46E2267C32300CBE016 /* GKContactDetailCell.swift in Sources */,
+				D5411F582264802A00FFE4EE /* GKContact.swift in Sources */,
+				D5E8E46C2267C31300CBE016 /* GKContactDetailProtocol.swift in Sources */,
+				D58F44482269DB1500837662 /* String+Extension.swift in Sources */,
+				D5411F4C22647F0A00FFE4EE /* GKRequest+Contacts.swift in Sources */,
+				D5411F8B2265B59200FFE4EE /* GKURLConnectionManager.swift in Sources */,
+				D5F9B6B622677C0C00BB3052 /* UIColor+Extension.swift in Sources */,
+				D5F9B6A62267035C00BB3052 /* GKContactListView.swift in Sources */,
+				D5F9B6B422676D2100BB3052 /* UIStoryboard+Extension.swift in Sources */,
+				D5411F2D226465AB00FFE4EE /* GKSplashViewController.swift in Sources */,
+				D5411F5E2264819600FFE4EE /* Storyboard+Protocol.swift in Sources */,
+				D5F9B69E2266FFF700BB3052 /* GKContactListProtocol.swift in Sources */,
+				D5F9B6B02267634900BB3052 /* UIImageView+Extension.swift in Sources */,
+				D5F9B6A42267009300BB3052 /* GKTableViewCell.swift in Sources */,
+				D589CA462451CE090080D953 /* GraphQLNetworkProvider.swift in Sources */,
+				D5E8E46A2267C30400CBE016 /* GKContactDetailPresenter.swift in Sources */,
+				D5411F652264851300FFE4EE /* GKError.swift in Sources */,
+				D589CA652451CF6F0080D953 /* ResponseErrorModel.swift in Sources */,
+				D5F9B69C2266FFE500BB3052 /* GKContactListPresenter.swift in Sources */,
+				D58F444A226A05B800837662 /* UIApplication+Extension.swift in Sources */,
+				D5411F4322647C8B00FFE4EE /* GKConstant.swift in Sources */,
+				D5CC18182268616C00D4C91B /* Codable+Extension.swift in Sources */,
+				D5411F622264824200FFE4EE /* GKViewController.swift in Sources */,
+				D5411F2B226465AB00FFE4EE /* GKAppDelegate.swift in Sources */,
+				D5411F892265AADD00FFE4EE /* GKURLSessionManager.swift in Sources */,
+				D589CA452451CE090080D953 /* GraphQLNetworkProvider+QueryHandler.swift in Sources */,
+				D5F9B6A22267002800BB3052 /* GKContactListCell.swift in Sources */,
+				D5411F672264852100FFE4EE /* GKLogger.swift in Sources */,
+				D5CC181622685C7E00D4C91B /* Int+Extension.swift in Sources */,
+				D589CA5D2451CE090080D953 /* API.swift in Sources */,
+				D5411F4E22647F3800FFE4EE /* GKAPIRequest.swift in Sources */,
+				D5411F5222647F9B00FFE4EE /* GKAPIConstant.swift in Sources */,
+				D5411F602264822D00FFE4EE /* GKBasicViewController.swift in Sources */,
+				D5F9B6AE2267631F00BB3052 /* UIView+Extension.swift in Sources */,
+				D58F446F226B003E00837662 /* GKTableViewController.swift in Sources */,
+				D5411F5022647F5500FFE4EE /* GKAPIRequest+Contacts.swift in Sources */,
+				D589CA442451CE090080D953 /* GraphQLNetworkConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5411F6A2264922300FFE4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58F4469226A40A700837662 /* GKContactListCellTests.swift in Sources */,
+				D58F446B226A40A700837662 /* GKContactListViewTests.swift in Sources */,
+				D58F446D226A40A700837662 /* GKContactDetailPresenterTests.swift in Sources */,
+				D58F4467226A40A700837662 /* GKAppDelegateTests.swift in Sources */,
+				D58F446A226A40A700837662 /* GKContactListPresenterTests.swift in Sources */,
+				D58F446C226A40A700837662 /* GKContactDetailViewTests.swift in Sources */,
+				D5411F712264922400FFE4EE /* ContactsTests.swift in Sources */,
+				D58F4468226A40A700837662 /* GKContactDetailCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5411F782264923D00FFE4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5411F7F2264923D00FFE4EE /* ContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5411F742264922400FFE4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5411F26226465AB00FFE4EE /* Contacts */;
+			targetProxy = D5411F732264922400FFE4EE /* PBXContainerItemProxy */;
+		};
+		D5411F822264923D00FFE4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5411F26226465AB00FFE4EE /* Contacts */;
+			targetProxy = D5411F812264923D00FFE4EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5411F2E226465AB00FFE4EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5411F2F226465AB00FFE4EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5411F33226465B000FFE4EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5411F34226465B000FFE4EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5411F37226465B000FFE4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D5411F38226465B000FFE4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5411F3A226465B000FFE4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840927C6EBB00507103E1E5B /* Pods-Contacts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = Contacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Celerstudio.Contacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5411F3B226465B000FFE4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA5D17F00D93455E1E9BB85 /* Pods-Contacts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = Contacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Celerstudio.Contacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5411F762264922400FFE4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FE9C549EE3997B7D312001 /* Pods-ContactsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = ContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Celerstudio.ContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contacts.app/Contacts";
+			};
+			name = Debug;
+		};
+		D5411F772264922400FFE4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B61867390DF0DE43FA3F90D8 /* Pods-ContactsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = ContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Celerstudio.ContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contacts.app/Contacts";
+			};
+			name = Release;
+		};
+		D5411F842264923D00FFE4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = ContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Celerstudio.ContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contacts;
+			};
+			name = Debug;
+		};
+		D5411F852264923D00FFE4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = ContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Celerstudio.ContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5411F22226465AB00FFE4EE /* Build configuration list for PBXProject "Contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5411F37226465B000FFE4EE /* Debug */,
+				D5411F38226465B000FFE4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5411F39226465B000FFE4EE /* Build configuration list for PBXNativeTarget "Contacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5411F3A226465B000FFE4EE /* Debug */,
+				D5411F3B226465B000FFE4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5411F752264922400FFE4EE /* Build configuration list for PBXNativeTarget "ContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5411F762264922400FFE4EE /* Debug */,
+				D5411F772264922400FFE4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5411F832264923D00FFE4EE /* Build configuration list for PBXNativeTarget "ContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5411F842264923D00FFE4EE /* Debug */,
+				D5411F852264923D00FFE4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5411F1F226465AB00FFE4EE /* Project object */;
+}

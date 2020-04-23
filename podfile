@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.1'
+
+def user_interface
+end
+
+def utilities
+  pod "Apollo", '~> 0.21.0'
+end
+
+def vendors
+end
+
+
+target 'Contacts' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for Zenius
+  user_interface
+  utilities
+  vendors
+
+end
+
+
+target 'ContactsTests' do
+    inherit! :search_paths
+    # Pods for testing
+end
+
